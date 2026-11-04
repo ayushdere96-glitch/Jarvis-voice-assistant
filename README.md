@@ -77,6 +77,34 @@ python3 main.py        # launch the assistant
 | 📱 | **Phone dashboard** | FastAPI remote control with a QR code |
 | 🗣️ | **Wake word** | Optional local "Hey Jarvis" (openwakeword) |
 | ▶️ | **Video on the HUD** | Local files, direct URLs, and YouTube via yt-dlp |
+| ⏰ | **Voice reminders** | Say what and when; reminders are scheduled with native OS tools on Windows, macOS and Linux |
+| 💬 | **Hands-free messaging** | Give a command and it sends the message for you (WhatsApp plugins drive the desktop app on Windows) |
+| 🧠 | **Persistent memory** | Remembers your settings and details between sessions, stored locally in `memory/` |
+| 🌍 | **Speaks many languages** | Understands about 50 languages and replies in the language you spoke, with local or cloud voices |
+
+---
+
+## 🗣️ Try these commands
+
+| Say | What happens |
+|---|---|
+| "Remind me to submit the assignment at 6 PM" | Schedules a reminder with your OS |
+| "Send a message to Rahul saying I'll be late" | Finds the contact and sends it for you |
+| "Remember that my exam is on Friday" | Saves it to memory for later sessions |
+| "Open YouTube and play lo-fi music" | Browser automation and HUD video |
+| "Check my calendar for today" | Gmail / Calendar plugin (after OAuth setup) |
+| Speak in Hindi, Spanish, French... | Jarvis detects the language and answers in it |
+
+> These are example phrases. The assistant picks tools from their descriptions, so natural wording works.
+
+## 🌍 Multilingual voice
+
+People switch languages mid-conversation, so the voice pipeline is built for it:
+
+- **Hearing:** local Whisper recognizes about 50 languages and detects the language per sentence. Nothing needs to be configured.
+- **Speaking, local:** Piper picks the voice that matches the language it just heard you speak (about 50 languages, around 60 MB per voice, downloaded on demand).
+- **Speaking, cloud:** one ElevenLabs voice speaks every language, with no downloads.
+- **System voices:** SAPI, `say` and espeak-ng work offline for the languages your machine has voices for.
 
 ---
 

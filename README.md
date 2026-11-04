@@ -5,10 +5,10 @@
 ### A JARVIS-style voice assistant for your desktop. Talk to it, and it runs your computer.
 
 ![Python](https://img.shields.io/badge/python-3.11%2B-blue?logo=python&logoColor=white)
-![License](https://img.shields.io/github/license/ayushdere96-glitch/mark-liv-jarvis)
+![License](https://img.shields.io/github/license/ayushdere96-glitch/Jarvis-voice-assistant)
 ![Platforms](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey)
-![Stars](https://img.shields.io/github/stars/ayushdere96-glitch/mark-liv-jarvis?style=social)
-![Last commit](https://img.shields.io/github/last-commit/ayushdere96-glitch/mark-liv-jarvis)
+![Stars](https://img.shields.io/github/stars/ayushdere96-glitch/Jarvis-voice-assistant?style=social)
+![Last commit](https://img.shields.io/github/last-commit/ayushdere96-glitch/Jarvis-voice-assistant)
 
 ![MARK LIV demo](docs/demo.gif)
 <!-- [ADD SCREENSHOT / DEMO GIF] Record 15-30 seconds of the HUD responding and save it as docs/demo.gif -->
@@ -30,8 +30,8 @@ MARK LIV holds a real-time spoken conversation through the **Gemini Live API** a
 ### Windows (PowerShell)
 
 ```powershell
-git clone https://github.com/ayushdere96-glitch/mark-liv-jarvis.git   # download the project
-cd mark-liv-jarvis                                                    # enter the folder
+git clone https://github.com/ayushdere96-glitch/Jarvis-voice-assistant.git   # download the project
+cd Jarvis-voice-assistant                                                    # enter the folder
 python setup.py        # installs deps for YOUR OS + the browser automation engine
 python main.py         # launch the assistant
 ```
@@ -39,8 +39,8 @@ python main.py         # launch the assistant
 ### macOS / Linux
 
 ```bash
-git clone https://github.com/ayushdere96-glitch/mark-liv-jarvis.git   # download the project
-cd mark-liv-jarvis                                                    # enter the folder
+git clone https://github.com/ayushdere96-glitch/Jarvis-voice-assistant.git   # download the project
+cd Jarvis-voice-assistant                                                    # enter the folder
 python3 setup.py       # installs deps for YOUR OS + the browser automation engine
 python3 main.py        # launch the assistant
 ```
@@ -147,7 +147,7 @@ Plugin extras installed by `requirements.txt`: Gmail and Google Calendar (OAuth)
 ## 🗂️ Project structure
 
 ```
-mark-liv-jarvis/
+Jarvis-voice-assistant/
 ├── main.py               # entry point
 ├── ui.py                 # PyQt6 holographic HUD
 ├── setup.py              # one-time, OS-aware installer
